@@ -1,15 +1,19 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-    <Version>1.0.0</Version>
+    <TargetFramework>net8.0</TargetFramework>
+    <NoWarn>1573;1587;1591</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1591</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Version>1.0.0</Version>
     <Authors>DCoats</Authors>
-    <Company>Rivet</Company>
-    <Copyright>Copyright (c) Rivet 2024</Copyright>
-    <Description>--- ADD DESCRIPTION ---</Description>
+    <Copyright>Copyright (c) David Coats 2024</Copyright>
+    <Description>Microsoft.AspNetCore.Components.Web NuGet package selector.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/davidcoats/D8S.NG0001.git</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.8" />
+  </ItemGroup>
 </Project>
